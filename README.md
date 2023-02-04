@@ -1,2 +1,8 @@
 # hopSkipJump
 Data Structures problem
+
+ The game of "Hop-Skip-Jump" consists of a board with  N  positive integers in a row. These numbers represent the cost to enter each column. (This could also be relevant to computing the best driving path through multiple cities, etc). Here is a sample game board where n is 6:
+     0    3    80   6   57   10
+The object of the game is to move from the first column to the last column with the lowest total cost. The number in each column represents the cost to enter that column. You always start the game in the first column and have two types of moves. You can either move to the adjacent column, or jump over the adjacent column to land two columns over. The cost of a game is the sum of the costs of the columns visited.
+In the board shown above, there are several ways to get to the end. Starting in the first column, our cost so far is 0. We could jump to 80, then jump to 57, then move to 10 for a total cost of 80+57+10=147.  However, a cheaper path would be to move to 3, jump to 6, then jump to 10, for a total cost of 3+6+10=19.
+Write a recursive solution to this problem that computes the lowest cost of the game (for a given arbitrarily large game board represented as an array) and outputs this cost value.  Your program doesn’t have to output the actual best sequence of jumps (although you might print those out during debugging), only the lowest cost of this sequence. After making sure that your solution works on small arrays, test it on boards of larger and larger values of N to get a feel for the scalability and efficiency of your solution. 
